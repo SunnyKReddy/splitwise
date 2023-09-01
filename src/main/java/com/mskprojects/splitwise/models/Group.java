@@ -15,4 +15,5 @@ public class Group extends BaseModel {
     private List<Expense> expensesList;
     @Enumerated(EnumType.ORDINAL)
     private CurrencyType currencyType;
+    private double totalGroupExpenses;
 }

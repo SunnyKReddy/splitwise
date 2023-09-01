@@ -13,6 +13,8 @@ public class Expense extends BaseModel {
     private String expenseName;
     private double amount;
     @ManyToMany
+    private List<User> paidBy;
+    @ManyToMany
     private List<User> expenseSharedByUsersList;
     @Enumerated(EnumType.ORDINAL)
     private SplitType splitType;
